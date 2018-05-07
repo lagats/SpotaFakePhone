@@ -1,0 +1,68 @@
+// ----------------------------
+// Typography
+// ----------------------------
+// Headings
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 3rem;
+    font-family: $font-family__heading;
+    font-weight: $font-weight__heading;
+    color: $col__font--heading;
+}
+
+h1,
+.h1 {
+    margin-bottom: $margin-bottom__heading-1;
+    font-size: $font-size__heading-1;
+    line-height: $line-height__heading-1;
+}
+
+h2,
+.h2 {
+    margin-bottom: $margin-bottom__heading-2;
+    font-size: $font-size__heading-2;
+    line-height: $line-height__heading-2;
+}
+
+h3,
+.h3 {
+    margin-bottom: $margin-bottom__heading-3;
+    font-size: $font-size__heading-3;
+    line-height: $line-height__heading-3;
+}
+
+h4,
+.h4 {
+    margin-bottom: $margin-bottom__heading-4;
+    font-size: $font-size__heading-4;
+    line-height: $line-height__heading-4;
+}
+
+h5,
+.h5 {
+    margin-bottom: $margin-bottom__heading-5;
+    font-size: $font-size__heading-5;
+    line-height: $line-height__heading-5;
+}
+
+h6,
+.h6 {
+    margin-bottom: $margin-bottom__heading-6;
+    font-size: $font-size__heading-6;
+    line-height: $line-height__heading-6;
+}
+
+// Paragraph
+p {
+    margin: 0 0 $font-size__body 0;
+}

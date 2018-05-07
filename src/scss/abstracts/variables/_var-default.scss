@@ -1,0 +1,30 @@
+// ----------------------------
+// Default Vars
+// ----------------------------
+
+// Base font size
+$font-size__base: 62.5%;
+
+// Page
+$page__full-width: 1366px;
+
+// Spacing
+$gap__base: 2rem;
+
+$gap--xl: $gap__base*2.5;
+$gap--l: $gap__base*2;
+$gap--m: $gap__base*1.5;
+$gap--s: $gap__base;
+$gap--xs: $gap__base*0.5;
+$gap--xxs: $gap__base*0.25;
+
+// Links
+$link--underlined-by-default: true;
+
+$link--initial: underline;
+$link--reversed: none;
+
+@if $link--underlined-by-default {
+    $link--initial: none;
+    $link--reversed: underline;
+}

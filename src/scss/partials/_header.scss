@@ -1,0 +1,73 @@
+// ----------------------------
+// Header
+// ----------------------------
+
+.list {
+    &--remove-padding {
+        padding: 0;
+    }
+    &--remove-margin {
+        margin: 0;
+    }
+    &--horizontal {
+         > li {
+            display: inline-block;
+        }
+    }
+}
+
+.h {
+    &__skip-to {
+    }
+    &__mobile {
+    }
+    &__desktop {
+    }
+    &__menu {
+        &--main {
+            min-height: 70px;
+            position: relative;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .15);
+            background-color: $col__header__main--bg;
+            nav {
+                a {
+                    color:$col__header__main--link-col;
+                    padding: $gap--xs*0.5 $gap--xs;
+                    border: 1px solid transparent;
+                    border-radius: 2px;
+                    &:hover, &:focus, &:active {
+                        color: $col__header__main--link-hover-col;
+                        background: $col__header__main--link-hover-bg-col;
+                        border-color: $col__header__main--link-hover-bg-col;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        &--pre {
+            min-height: 35px;
+            position: relative;
+            z-index: 1000;
+            font-size: $font-size__s;
+            color: white;
+            background-color: $col__header__pre--bg;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+.logo {
+    color: $col__grey--90;
+    font-weight: normal;
+    text-decoration: none !important;
+
+    &__emphasis {
+        font-weight: bold;
+        color: $col__alt-0;
+    }
+    &:hover, &:focus, &:active {
+        border-bottom: 1px solid $col__alt-0;
+    }
+}

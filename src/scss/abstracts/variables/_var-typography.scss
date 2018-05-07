@@ -1,0 +1,87 @@
+// ----------------------------
+// Typography Vars
+// ----------------------------
+
+// Font type
+$font-primary: 'Open Sans';
+$font-secondary: 'Quicksand';
+$font-fallback: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Primary font weights:
+$font-weight__primary--normal: 400;
+$font-weight__primary--bold: 700;
+
+$font-weight__primary--light: $font-weight__primary--normal;
+$font-weight__primary--semibold: 600;
+$font-weight__primary--heavy: $font-weight__primary--bold;
+
+// Secondary font weights:
+$font-weight__secondary--normal: 700;
+$font-weight__secondary--bold: $font-weight__secondary--normal;
+
+$font-weight__secondary--light: $font-weight__secondary--normal;
+$font-weight__secondary--semibold: $font-weight__secondary--normal;
+$font-weight__secondary--heavy: $font-weight__secondary--bold;
+
+
+// Font sizes
+$font-size__xxl: 3rem;
+$font-size__xl: 2.2rem;
+$font-size__l: 1.8rem;
+$font-size__m: 1.6rem;
+$font-size__s: 1.2rem;
+$font-size__xs: 1rem;
+
+
+
+// ----------------------------
+// Typographic Styles
+// ----------------------------
+
+// Font Body
+$font-size__body-line-height-multiplier: 1.5;
+
+$font-weight__body: $font-weight__primary--normal;
+$font-family__body: $font-primary, $font-fallback;
+
+$font-size__body: $font-size__m;
+$line-height__body: $font-size__body*$font-size__body-line-height-multiplier;
+
+
+// Font Heading
+$font-size__heading-add: 0.1;
+$line-height__multiplier-heading: 1.25;
+$margin-bottom__multiplier-heading: 0.5;
+
+$font-weight__heading: $font-weight__secondary--bold;
+$font-family__heading: $font-secondary, $font-fallback;
+
+// H1
+$font-size__heading-1: $font-size__xxl + $font-size__heading-add;
+$line-height__heading-1: $font-size__heading-1*$line-height__multiplier-heading;
+$margin-bottom__heading-1: $font-size__heading-1*$margin-bottom__multiplier-heading;
+
+// H2
+$font-size__heading-2: $font-size__xl + $font-size__heading-add;
+$line-height__heading-2: $font-size__heading-2*$line-height__multiplier-heading;
+$margin-bottom__heading-2: $font-size__heading-2*$margin-bottom__multiplier-heading;
+
+// H3
+$font-size__heading-3: $font-size__l + $font-size__heading-add;
+$line-height__heading-3: $font-size__heading-3*$line-height__multiplier-heading;
+$margin-bottom__heading-3: $font-size__heading-3*$margin-bottom__multiplier-heading;
+
+// H4
+$font-size__heading-4: $font-size__m + $font-size__heading-add;
+$line-height__heading-4: $font-size__heading-4*$line-height__multiplier-heading;
+$margin-bottom__heading-4: $font-size__heading-4*$margin-bottom__multiplier-heading;
+
+// H5
+$font-size__heading-5: $font-size__s + $font-size__heading-add;
+$line-height__heading-5: $font-size__heading-5*$line-height__multiplier-heading;
+$margin-bottom__heading-5: $font-size__heading-5*$margin-bottom__multiplier-heading;
+
+// H6
+$font-size__heading-6: $font-size__xs + $font-size__heading-add;
+$line-height__heading-6: $font-size__heading-6*$line-height__multiplier-heading;
+$margin-bottom__heading-6: $font-size__heading-6*$margin-bottom__multiplier-heading;

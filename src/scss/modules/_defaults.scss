@@ -1,0 +1,49 @@
+// ----------------------------
+// Defaults
+// ----------------------------
+
+* {
+    box-sizing: border-box;
+
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+html {
+    font-size: $font-size__base;
+}
+body {
+    font: #{$font-weight__body} #{$font-size__body}/#{$line-height__body} #{$font-family__body};
+    transition: all .4s .3s ease-in;
+    color: $col__font--body;
+    background-color: $col__body--bg;
+}
+body,
+html {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+
+// Links
+a {
+    font-weight: bold;
+    text-decoration: $link--initial;
+    -webkit-transition: all .2s ease;
+            transition: all .2s ease;
+    color: $col__link--initial;
+    outline: none;
+
+    &.reversed {
+        text-decoration: $link--reversed;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: $link--reversed;
+        color: $col__link--active;
+
+        &.reversed {
+            text-decoration: $link--initial;
+        }
+    }
+}

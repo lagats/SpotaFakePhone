@@ -1,0 +1,19 @@
+// ----------------------------
+// Section
+// ----------------------------
+
+.section {
+    margin: $gap--m 0;
+    &--xs {
+        margin: $gap--xs 0;
+    }
+    &--s {
+        margin: $gap--s 0;
+    }
+    &--l {
+        margin: $gap--l 0;
+    }
+    &--xl {
+        margin: $gap--xl 0;
+    }
+}

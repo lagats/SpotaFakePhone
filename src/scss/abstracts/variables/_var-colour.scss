@@ -1,0 +1,53 @@
+// ----------------------------
+// Colour Vars
+// ----------------------------
+
+// https://coolors.co/bf412c-214b63-087e8b-bfd7ea-ff5a5f
+$col__alt-0: #BF412C;
+$col__alt-1: #214B63;
+$col__alt-2: #087E8B;
+$col__alt-3: #BFD7EA;
+$col__alt-4: #FF5A5F;
+
+// Palette
+$col__primary: $col__alt-0;
+$col__primary--dark: darken($col__primary,10%);
+
+// Grey Scale
+$black: #000;
+$col__grey--90: lighten($black,10%);
+$col__grey--80: lighten($black,20%);
+$col__grey--70: lighten($black,30%);
+$col__grey--60: lighten($black,40%);
+$col__grey--50: lighten($black,50%);
+$col__grey--40: lighten($black,60%);
+$col__grey--30: lighten($black,70%);
+$col__grey--20: lighten($black,80%);
+$col__grey--10: lighten($black,90%);
+$white: #fff;
+
+
+
+// ----------------------------
+// Content colours
+// ----------------------------
+
+// Body
+$col__body--bg: lighten($black,97.5%);
+
+// Font Colours
+$col__font--body: $col__grey--70;
+$col__font--heading: $col__grey--70;
+
+// Link
+$col__link--initial: $col__alt-2;
+$col__link--active: $col__alt-1;
+
+// Header
+$col__header__main--bg: $white;
+$col__header__main--border-col: $col__grey--10;
+$col__header__main--link-col: $col__alt-1;
+$col__header__main--link-hover-col: $white;
+$col__header__main--link-hover-bg-col: $col__alt-1;
+
+$col__header__pre--bg: $col__primary;

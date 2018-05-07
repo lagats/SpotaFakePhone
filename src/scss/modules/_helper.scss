@@ -1,0 +1,47 @@
+// ----------------------------
+// Helper class
+// ----------------------------
+
+// Spacing
+.padding {
+    &--remove-top {
+        padding-top: 0 !important;
+    }
+    &--remove-right {
+        padding-right: 0 !important;
+    }
+    &--remove-bottom {
+        padding-left: 0 !important;
+    }
+    &--remove-left {
+        padding-left: 0 !important;
+    }
+    &--remove-all {
+        padding: 0 !important;
+    }
+}
+.margin {
+    &--remove-top {
+        margin-top: 0 !important;
+    }
+    &--remove-right {
+        margin-right: 0 !important;
+    }
+    &--remove-bottom {
+        margin-left: 0 !important;
+    }
+    &--remove-left {
+        margin-left: 0 !important;
+    }
+    &--remove-all {
+        margin: 0 !important;
+    }
+}
+
+// Typographic
+.normal {
+    font-weight: normal;
+}
+.bold {
+    font-weight: bold;
+}

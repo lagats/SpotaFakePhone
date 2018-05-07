@@ -1,0 +1,17 @@
+// ----------------------------
+// Flex
+// ----------------------------
+
+.flex {
+    display: flex;
+    &__align-items {
+        &--center {
+            align-items: center;
+        }
+    }
+    &__align-self {
+        &--right {
+            margin-left: auto;
+        }
+    }
+}
