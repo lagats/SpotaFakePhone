@@ -414,7 +414,7 @@ html {
 a {
   font-weight: bold;
   text-decoration: none;
-  transition: all .2s ease;
+  transition: all .1s ease;
   color: #087E8B;
   outline: none; }
   a.reversed {
@@ -429,22 +429,53 @@ a {
   width: 1366px;
   max-width: 100%;
   padding: 0 3rem;
-  margin: auto; }
+  margin: 0 auto; }
   .container--s {
     padding: 0 2rem; }
   .container--l {
     padding: 0 4rem; }
 
 .section {
-  margin: 3rem 0; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
   .section--xs {
-    margin: 1rem 0; }
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
   .section--s {
-    margin: 2rem 0; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
   .section--l {
-    margin: 4rem 0; }
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
   .section--xl {
-    margin: 5rem 0; }
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+
+.grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  margin-top: -3rem; }
+
+[class*="col--"] > .card {
+  height: 100%; }
+
+.col--1-3 {
+  width: 33.33%;
+  margin-top: 3rem;
+  padding: 0 1.5rem; }
+
+.card {
+  background: white;
+  padding: 2rem; }
+  .card__block {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #cccccc; }
 
 .flex {
   display: -ms-flexbox;
@@ -452,8 +483,24 @@ a {
   .flex__align-items--center {
     -ms-flex-align: center;
         align-items: center; }
+  .flex__align-items--end {
+    -ms-flex-align: end;
+        align-items: flex-end; }
   .flex__align-self--right {
     margin-left: auto; }
+  .flex__align-self--bottom {
+    -ms-flex-item-align: end;
+        align-self: flex-end; }
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  opacity: 0; }
+
+.sr-only--focus:not(:focus) {
+  position: absolute;
+  left: -9999px;
+  opacity: 0; }
 
 .padding--remove-top {
   padding-top: 0 !important; }
@@ -500,6 +547,15 @@ a {
 .list--horizontal > li {
   display: inline-block; }
 
+.h__skip-to a {
+  min-height: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+  background: #e6e6e6; }
+
 .h__menu--main {
   min-height: 70px;
   position: relative;
@@ -512,7 +568,7 @@ a {
     border-radius: 2px; }
     .h__menu--main nav a:hover, .h__menu--main nav a:focus, .h__menu--main nav a:active {
       color: #fff;
-      background: #214B63;
+      background-color: #214B63;
       border-color: #214B63;
       text-decoration: none; }
 
@@ -523,8 +579,11 @@ a {
   font-size: 1.2rem;
   color: white;
   background-color: #BF412C; }
-  .h__menu--pre a {
+  .h__menu--pre nav a {
+    padding: 0.5rem 1rem;
     color: white; }
+    .h__menu--pre nav a:hover, .h__menu--pre nav a:focus, .h__menu--pre nav a:active {
+      background-color: #963322; }
 
 .logo {
   color: #1a1a1a;
@@ -538,6 +597,51 @@ a {
 
 .nav ul {
   list-style: none; }
+
+.banner {
+  height: 45vh;
+  min-height: 450px;
+  position: relative; }
+  .banner__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover; }
+  .banner__block {
+    position: relative;
+    z-index: 1000;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.8); }
+    .banner__block--title {
+      position: relative;
+      padding-bottom: 1rem;
+      color: #333333; }
+      .banner__block--title:after {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom: 1px solid #cccccc;
+        content: ""; }
+    .banner__block--summery {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #333333; }
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #214B63;
+  border-radius: 3px;
+  color: #214B63; }
+  .btn:hover, .btn:focus, .btn:active {
+    border-color: #214B63;
+    text-decoration: none;
+    color: #fff;
+    background-color: #214B63; }
 
 h1,
 .h1,
@@ -555,6 +659,19 @@ h6,
   font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   color: #4d4d4d; }
+  h1:first-child,
+  .h1:first-child,
+  h2:first-child,
+  .h2:first-child,
+  h3:first-child,
+  .h3:first-child,
+  h4:first-child,
+  .h4:first-child,
+  h5:first-child,
+  .h5:first-child,
+  h6:first-child,
+  .h6:first-child {
+    margin-top: 0; }
 
 h1,
 .h1 {
@@ -594,6 +711,8 @@ h6,
 
 p {
   margin: 0 0 1.6rem 0; }
+  p:last-child {
+    margin-bottom: 0; }
 
 ::-moz-selection {
   background: #333;

@@ -8,10 +8,16 @@
         &--center {
             align-items: center;
         }
+        &--end {
+            align-items: flex-end;
+        }
     }
     &__align-self {
         &--right {
             margin-left: auto;
+        }
+        &--bottom {
+            align-self: flex-end;
         }
     }
 }

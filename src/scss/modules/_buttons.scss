@@ -1,0 +1,19 @@
+// ----------------------------
+// Button
+// ----------------------------
+
+.btn {
+    display: inline-block;
+    padding: $gap--xs*.5 $gap--xs;
+    border: 1px solid $col__header__main--link-col;
+    border-radius: 3px;
+    color: $col__header__main--link-col;
+    &:hover,
+    &:focus,
+    &:active {
+        border-color: $col__header__main--link-hover-bg-col;
+        text-decoration: none;
+        color: $col__header__main--link-hover-col;
+        background-color: $col__header__main--link-hover-bg-col;
+    }
+}

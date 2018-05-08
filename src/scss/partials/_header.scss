@@ -18,6 +18,15 @@
 
 .h {
     &__skip-to {
+        a {
+            min-height: 35px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: $gap--xs*0.5 $gap--xs;
+            z-index: 9999;
+            background: $col__grey--10;
+        }
     }
     &__mobile {
     }
@@ -37,7 +46,7 @@
                     border-radius: 2px;
                     &:hover, &:focus, &:active {
                         color: $col__header__main--link-hover-col;
-                        background: $col__header__main--link-hover-bg-col;
+                        background-color: $col__header__main--link-hover-bg-col;
                         border-color: $col__header__main--link-hover-bg-col;
                         text-decoration: none;
                     }
@@ -51,8 +60,14 @@
             font-size: $font-size__s;
             color: white;
             background-color: $col__header__pre--bg;
-            a {
-                color: white;
+            nav {
+                a {
+                    padding: $gap--xs*0.5 $gap--xs;
+                    color: white;
+                    &:hover, &:focus, &:active {
+                        background-color: $col__primary--dark;
+                    }
+                }
             }
         }
     }

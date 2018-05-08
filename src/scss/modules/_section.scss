@@ -3,17 +3,22 @@
 // ----------------------------
 
 .section {
-    margin: $gap--m 0;
+    margin-top: $gap--m;
+    margin-bottom: $gap--m;
     &--xs {
-        margin: $gap--xs 0;
+        margin-top: $gap--xs;
+        margin-bottom: $gap--xs;
     }
     &--s {
-        margin: $gap--s 0;
+        margin-top: $gap--s;
+        margin-bottom: $gap--s;
     }
     &--l {
-        margin: $gap--l 0;
+        margin-top: $gap--l;
+        margin-bottom: $gap--l;
     }
     &--xl {
-        margin: $gap--xl 0;
+        margin-top: $gap--xl;
+        margin-bottom: $gap--xl;
     }
 }

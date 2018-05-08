@@ -18,6 +18,10 @@ h6,
     font-family: $font-family__heading;
     font-weight: $font-weight__heading;
     color: $col__font--heading;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 h1,
@@ -65,4 +69,8 @@ h6,
 // Paragraph
 p {
     margin: 0 0 $font-size__body 0;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 }

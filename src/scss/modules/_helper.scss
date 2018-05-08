@@ -2,6 +2,18 @@
 // Helper class
 // ----------------------------
 
+// Screen reader only
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+.sr-only--focus:not(:focus) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+
 // Spacing
 .padding {
     &--remove-top {

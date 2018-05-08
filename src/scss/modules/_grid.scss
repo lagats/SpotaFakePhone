@@ -1,0 +1,36 @@
+// ----------------------------
+// Grid
+// ----------------------------
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-left: -$gap--m/2;
+    margin-right: -$gap--m/2;
+    margin-top: -$gap--m;
+}
+
+[class*="col--"] {
+    > .card {
+        height: 100%;
+    }
+}
+
+.col {
+    &--1-3 {
+        width: 33.33%;
+        margin-top:$gap--m;
+        padding: 0 $gap--m/2;
+    }
+}
+
+.card {
+    background: white;
+    padding: $gap--s;
+
+    &__block {
+        padding-bottom: $gap--s;
+        border-bottom: 1px solid $col__grey--20;
+    }
+}
