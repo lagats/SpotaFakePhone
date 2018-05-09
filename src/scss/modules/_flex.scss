@@ -4,6 +4,11 @@
 
 .flex {
     display: flex;
+    &__justify-content {
+        &--center {
+            justify-content: center;
+        }
+    }
     &__align-items {
         &--center {
             align-items: center;

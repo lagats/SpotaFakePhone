@@ -425,15 +425,22 @@ a {
     a:hover.reversed, a:focus.reversed, a:active.reversed {
       text-decoration: none; }
 
+img {
+  max-width: 100%; }
+
 .container {
   width: 1366px;
   max-width: 100%;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin: 0 auto; }
-  .container--s {
-    padding: 0 2rem; }
-  .container--l {
-    padding: 0 4rem; }
+
+@media only screen and (min-width: 64em) {
+  .container {
+    padding: 0 3rem; }
+    .container--s {
+      padding: 0 2rem; }
+    .container--l {
+      padding: 0 4rem; } }
 
 .section, .section--m {
   margin-top: 3rem;
@@ -478,17 +485,38 @@ a {
   margin-right: -1.5rem;
   margin-top: -3rem; }
 
-[class*="col--"] > .card {
-  height: 100%; }
-
-.col--1-3 {
-  width: 33.33%;
+[class*="col--"] {
   margin-top: 3rem;
-  padding: 0 1.5rem; }
+  padding: 0 1.5rem;
+  width: 100%; }
+  [class*="col--"] > .card {
+    height: 100%; }
+  [class*="col--"] > .card--auto {
+    height: auto; }
+
+.col--1-1, .col--full {
+  width: 100%; }
+
+@media only screen and (min-width: 48em) {
+  .col--1-2, .col--1-3, .col--2-3 {
+    width: 50%; } }
+
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+  [class*="col--"] [class*="col--"] {
+    width: 100%; } }
+
+@media only screen and (min-width: 64em) {
+  .col--1-3 {
+    width: 33.33%; }
+  .col--2-3 {
+    width: 66.66%; } }
 
 .flex {
   display: -ms-flexbox;
   display: flex; }
+  .flex__justify-content--center {
+    -ms-flex-pack: center;
+        justify-content: center; }
   .flex__align-items--center {
     -ms-flex-align: center;
         align-items: center; }
@@ -546,6 +574,13 @@ a {
 
 .text-align--center {
   text-align: center; }
+
+.greyscale {
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); }
+
+.opacity--75 {
+  opacity: 0.75; }
 
 .h__skip-to a {
   min-height: 35px;
@@ -649,13 +684,14 @@ a {
     background-color: #087E8B; }
 
 .card {
-  background: white;
   padding: 2rem; }
   .card__inner {
     height: 100%;
     width: 100%; }
   .card__block {
     padding-bottom: 2rem; }
+  .card__colour--white {
+    background: white; }
 
 h1,
 .h1,

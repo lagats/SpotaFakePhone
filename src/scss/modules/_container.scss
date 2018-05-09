@@ -5,12 +5,29 @@
 .container {
     width: $page__full-width;
     max-width: 100%;
-    padding: 0 $gap--m;
+    padding: 0 $gap--s;
     margin: 0 auto;
-    &--s {
-        padding: 0 $gap--s;
-    }
-    &--l {
-        padding: 0 $gap--l;
+}
+
+
+
+// ----------------------------
+// Responsive
+// ----------------------------
+
+// @media only screen and (min-width:$bp--m) {
+//     .container {
+//         padding: 0 $gap--s;
+//     }
+// }
+@media only screen and (min-width:$bp--l) {
+    .container {
+        padding: 0 $gap--m;
+        &--s {
+            padding: 0 $gap--s;
+        }
+        &--l {
+            padding: 0 $gap--l;
+        }
     }
 }

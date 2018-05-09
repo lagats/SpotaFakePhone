@@ -9,6 +9,12 @@
     &--xs {
         margin-top: $gap--xs;
         margin-bottom: $gap--xs;
+        // @media only screen and (max-width:$bp--l) {
+        //     &--tablet-only {
+        //         margin-top: $gap--s;
+        //         margin-bottom: $gap--s;
+        //     }
+        // }
     }
     &--s {
         margin-top: $gap--s;

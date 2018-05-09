@@ -35,6 +35,11 @@
 .margin {
     &--remove-top {
         margin-top: 0 !important;
+        // @media only screen and (max-width:$bp--l) {
+        //     &--tablet-only {
+        //         margin-top: 0 !important;
+        //     }
+        // }
     }
     &--remove-right {
         margin-right: 0 !important;
@@ -59,5 +64,23 @@
 .text-align {
     &--center {
         text-align: center;
+        // @media only screen and (max-width:$bp--l) {
+        //     &--tablet-only {
+        //         text-align: center;
+        //     }
+        // }
+    }
+}
+
+// greyscale
+.greyscale {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+// opacity
+.opacity {
+    &--75 {
+        opacity: 0.75;
     }
 }
