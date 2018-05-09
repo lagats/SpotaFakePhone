@@ -2,9 +2,10 @@
 // Section
 // ----------------------------
 
-.section {
+.section, .section--m {
     margin-top: $gap--m;
     margin-bottom: $gap--m;
+
     &--xs {
         margin-top: $gap--xs;
         margin-bottom: $gap--xs;
@@ -20,5 +21,17 @@
     &--xl {
         margin-top: $gap--xl;
         margin-bottom: $gap--xl;
+    }
+    &--xxl {
+        margin-top: $gap--xxl;
+        margin-bottom: $gap--xxl;
+    }
+
+    // coloured sections
+    @at-root [class*="section__colour--"] {
+        overflow: hidden;
+    }
+    &__colour--white {
+        background: $white;
     }
 }

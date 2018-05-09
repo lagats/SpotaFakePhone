@@ -2,20 +2,6 @@
 // Header
 // ----------------------------
 
-.list {
-    &--remove-padding {
-        padding: 0;
-    }
-    &--remove-margin {
-        margin: 0;
-    }
-    &--horizontal {
-         > li {
-            display: inline-block;
-        }
-    }
-}
-
 .h {
     &__skip-to {
         a {

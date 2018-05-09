@@ -1,19 +1,19 @@
-@media only screen and (min-width:em(320px)) {
+@media only screen and (min-width:$bp--xs) {
 
 }
-@media only screen and (min-width:em(480px)) {
+@media only screen and (min-width:$bp--s) {
 
 }
-@media only screen and (min-width:em(768px)) {
+@media only screen and (min-width:$bp--m) {
 
 }
-@media only screen and (min-width:em(1024px)) {
+@media only screen and (min-width:$bp--l) {
 
 }
-@media only screen and (min-width:em(1140px)) {
+@media only screen and (min-width:$bp--xl) {
 
 }
-@media only screen and (min-width:em($page__full-width)) {
+@media only screen and (min-width:$bp--xxl) {
 
 }
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {

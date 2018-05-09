@@ -1,6 +1,7 @@
 // ----------------------------
 // Typography
 // ----------------------------
+
 // Headings
 h1,
 .h1,
@@ -66,11 +67,27 @@ h6,
     line-height: $line-height__heading-6;
 }
 
+
 // Paragraph
 p {
     margin: 0 0 $font-size__body 0;
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+
+// Text colour
+.colour-text {
+    &--primary {
+        color: $col__primary;
+    }
+}
+
+// Font size
+.font-size {
+    &--s {
+        font-size: $font-size__s;
     }
 }

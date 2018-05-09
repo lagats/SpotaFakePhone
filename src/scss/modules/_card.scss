@@ -1,0 +1,16 @@
+// ----------------------------
+// Card
+// ----------------------------
+
+.card {
+    background: white;
+    padding: $gap--s;
+
+    &__inner {
+        height: 100%;
+        width: 100%;
+    }
+    &__block {
+        padding-bottom: $gap--s;
+    }
+}

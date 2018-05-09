@@ -1,0 +1,16 @@
+// ----------------------------
+// Breakpoints
+// ----------------------------
+
+ // mobile
+$bp--xs:            em(320px);
+$bp--s:             em(480px);
+
+ // Tablet
+$bp--m:             em(768px);
+$bp--l:             em(1024px);
+
+ // Desktop
+$bp--xl:            em(1140px);
+$bp--xxl:           em($page__full-width);
+$bp--content-width: $bp--xxl;

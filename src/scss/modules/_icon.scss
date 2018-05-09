@@ -1,0 +1,12 @@
+// ----------------------------
+// Icon
+// ----------------------------
+
+.icon {
+    &--xl {
+        font-size: $font-size__heading-1;
+    }
+    &--xxl {
+        font-size: $font-size__heading-1*2;
+    }
+}

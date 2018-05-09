@@ -23,7 +23,7 @@
         padding-right: 0 !important;
     }
     &--remove-bottom {
-        padding-left: 0 !important;
+        padding-bottom: 0 !important;
     }
     &--remove-left {
         padding-left: 0 !important;
@@ -50,10 +50,14 @@
     }
 }
 
-// Typographic
-.normal {
-    font-weight: normal;
-}
+// Typographic weight
 .bold {
     font-weight: bold;
+}
+
+// Typographic alignment
+.text-align {
+    &--center {
+        text-align: center;
+    }
 }

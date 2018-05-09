@@ -1,0 +1,31 @@
+// ----------------------------
+// Card
+// ----------------------------
+
+%br--defaults {
+    position: relative;
+    &:after {
+        width: 100%;
+        position: absolute;
+        content: "";
+    }
+}
+
+.br {
+    &--bottom {
+        @extend %br--defaults;
+
+        &:after {
+            bottom: 0;
+            border-bottom: 1px solid $col__grey--20;
+        }
+    }
+
+    // colour
+    &__colour--grey--10 {
+        &:after {
+            border-color:  $col__grey--10;
+        }
+    }
+}
+

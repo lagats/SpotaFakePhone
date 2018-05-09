@@ -3,7 +3,7 @@
 // ----------------------------
 
 .banner {
-    height: 45vh;
+    height: 50vh;
     min-height: 450px;
     position: relative;
 
@@ -13,6 +13,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        background-image: url(../img/photo-1498049794561-7780e7231661.jpg);
         background-position: center;
         background-size: cover;
     }
@@ -20,9 +21,7 @@
         position: relative;
         z-index: 1000;
         padding: $gap--s;
-        // margin: 0 #{-$gap--s};
         background: rgba(255, 255, 255, .8);
-
         &--title {
             position: relative;
             padding-bottom: $gap--xs;

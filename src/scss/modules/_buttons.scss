@@ -5,15 +5,22 @@
 .btn {
     display: inline-block;
     padding: $gap--xs*.5 $gap--xs;
-    border: 1px solid $col__header__main--link-col;
+    border: 1px solid transparent;
     border-radius: 3px;
-    color: $col__header__main--link-col;
+    color: $col__link--initial;
+    background-color: $white;
     &:hover,
     &:focus,
     &:active {
-        border-color: $col__header__main--link-hover-bg-col;
+        border-color: $col__link--active;
         text-decoration: none;
-        color: $col__header__main--link-hover-col;
-        background-color: $col__header__main--link-hover-bg-col;
+        color: $white;
+        background-color: $col__link--active;
+    }
+
+    &--primary {
+        color: $white;
+        background-color: $col__link--initial;
     }
 }
+
