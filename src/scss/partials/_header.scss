@@ -14,6 +14,11 @@
             background: $col__grey--10;
         }
     }
+    &__pick-lang {
+        // https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed
+        ul li       ul { display: none; }
+        ul li:hover ul { display: block;}
+    }
     &__mobile {
     }
     &__desktop {

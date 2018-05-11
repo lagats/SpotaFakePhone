@@ -579,8 +579,8 @@ img {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
-.opacity--75 {
-  opacity: 0.75; }
+.opacity--85 {
+  opacity: 0.85; }
 
 .h__skip-to a {
   min-height: 35px;
@@ -590,6 +590,12 @@ img {
   padding: 0.5rem 1rem;
   z-index: 9999;
   background: #e6e6e6; }
+
+.h__pick-lang ul li ul {
+  display: none; }
+
+.h__pick-lang ul li:hover ul {
+  display: block; }
 
 .h__menu--main {
   min-height: 70px;
