@@ -595,7 +595,9 @@ img {
   min-height: 70px;
   position: relative;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.15);
-  background-color: #fff; }
+  background-color: #fff;
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .h__menu--main nav a {
     color: #214B63;
     padding: 0.5rem 1rem;
@@ -613,8 +615,11 @@ img {
   z-index: 1000;
   font-size: 1.2rem;
   color: white;
+  margin-left: -1rem;
+  margin-right: -1rem;
   background-color: #BF412C; }
   .h__menu--pre nav a {
+    display: block;
     padding: 0.5rem 1rem;
     color: white; }
     .h__menu--pre nav a:hover, .h__menu--pre nav a:focus, .h__menu--pre nav a:active {
@@ -623,7 +628,8 @@ img {
 .logo {
   color: #1a1a1a;
   font-weight: normal;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  padding: 0 1rem; }
   .logo__emphasis {
     font-weight: bold;
     color: #BF412C; }
@@ -633,6 +639,8 @@ img {
 @media only screen and (min-width: 48em) {
   .has-submenu {
     position: relative; }
+    .has-submenu svg {
+      margin-left: 0.5rem; }
     .has-submenu ul {
       position: absolute;
       background: #fff;

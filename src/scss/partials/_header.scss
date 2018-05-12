@@ -27,6 +27,8 @@
             position: relative;
             box-shadow: 0 0 6px 0 rgba(0, 0, 0, .15);
             background-color: $col__header__main--bg;
+            margin-left: -$gap--xs;
+            margin-right: -$gap--xs;
             nav {
                 a {
                     color:$col__header__main--link-col;
@@ -48,9 +50,12 @@
             z-index: 1000;
             font-size: $font-size__s;
             color: white;
+            margin-left: -$gap--xs;
+            margin-right: -$gap--xs;
             background-color: $col__header__pre--bg;
             nav {
                 a {
+                    display: block;
                     padding: $gap--xs*0.5 $gap--xs;
                     color: white;
                     &:hover, &:focus, &:active {
@@ -66,7 +71,7 @@
     color: $col__grey--90;
     font-weight: normal;
     text-decoration: none !important;
-
+    padding: 0 $gap--xs;
     &__emphasis {
         font-weight: bold;
         color: $col__alt-0;
@@ -83,6 +88,9 @@
 @media only screen and (min-width:$bp--m) {
     .has-submenu  {
         position: relative;
+        svg {
+            margin-left: 0.5rem;
+        }
         ul {
             $dropdown__offset-bottom: 8px;
             position: absolute;
