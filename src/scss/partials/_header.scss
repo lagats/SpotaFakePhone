@@ -15,9 +15,7 @@
         }
     }
     &__pick-lang {
-        // https://www.w3.org/WAI/tutorials/menus/flyout/#flyoutnavmousefixed
-        ul li       ul { display: none; }
-        ul li:hover ul { display: block;}
+
     }
     &__mobile {
     }
@@ -75,5 +73,52 @@
     }
     &:hover, &:focus, &:active {
         border-bottom: 1px solid $col__alt-0;
+    }
+}
+
+// ----------------------------
+// Responsive
+// ----------------------------
+
+@media only screen and (min-width:$bp--m) {
+    .has-submenu  {
+        position: relative;
+        ul {
+            $dropdown__offset-bottom: 8px;
+            position: absolute;
+            background: $white;
+            border-radius: 3px;
+            top:calc(100% + #{$dropdown__offset-bottom});
+            left:0;
+            flex-direction: column;
+            box-shadow: 0px 0px 2px rgba(0,0,0,0.25);
+            border: 1px solid $col__grey--10;
+            display: none;
+            li {
+                display: inline-flex;
+            }
+            a {
+                color:$col__header__main--link-col;
+                white-space: nowrap;
+                flex-grow:1;
+                &:hover, &:focus {
+                    color: $col__grey--90;
+                    background: $col__grey--10;
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                height: $dropdown__offset-bottom;
+                bottom: 100%;
+                left: 0;
+                width: 100%;
+            }
+        }
+        &:hover, &.open {
+            ul {
+                display: flex;
+            }
+        }
     }
 }
