@@ -24,6 +24,7 @@
         var drawerCloseActionAccessability = function() {
             $('.'+drawerOuterClassName).attr('aria-expanded','false');
             menuToggleDescription.text('Open main navigation button');
+            menuToggle.attr('aria-pressed','false');
         };
         var drawerCloseAction = function() {
             menuOuter.removeClass(activeClassName);
@@ -33,6 +34,7 @@
         var drawerOpenActionAccessability = function() {
             $('.'+drawerOuterClassName).attr('aria-expanded','true');
             menuToggleDescription.text('Close main navigation button');
+            menuToggle.attr('aria-pressed','true');
         };
         var drawerOpenAction = function() {
             menuOuter.addClass(activeClassName);

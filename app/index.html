@@ -12,9 +12,6 @@
     <link href="assets/css/style.min.css" rel="stylesheet">
 
     <script src="assets/components/modernizr/modernizr.js"></script>
-    <script defer src="assets/components/fontawesome/fontawesome.min.js"></script>
-    <script defer src="assets/components/fontawesome/fa-regular.min.js"></script>
-    <script defer src="assets/components/fontawesome/fa-brands.min.js"></script>
 </head>
 
 <body>
@@ -34,7 +31,7 @@
                     <nav class="nav flex__align-self--right" role="navigation">
                         <ul class="list--remove-padding list--remove-margin list--horizontal">
                             <li>
-                                <a class="btn btn--icon btn__menu--toggle" tabindex="0">
+                                <a class="btn btn--icon btn__menu--toggle" tabindex="0" role="button" aria-pressed="false">
                                     <span class="sr-only btn__menu--toggle--description">Toggle main navigation</span>
                                     <i class="far fa-bars state--0" aria-hidden="true"></i>
                                     <i class="far fa-times state--x" aria-hidden="true"></i>
@@ -51,7 +48,7 @@
                     <nav class="h__pick-lang" role="navigation">
                         <ul class="list--remove-padding list--remove-margin list--horizontal">
                             <li class="has-submenu">
-                                <a aria-haspopup="true" aria-expanded="false" tabindex="0">
+                                <a href="#" role="button"aria-haspopup="true" aria-expanded="false">
                                     <i class="far fa-globe space--right" aria-hidden="true"></i><span class="sr-only">Select your language: The current language is </span>English<i class="far fa-angle-down space--left" aria-hidden="true"></i>
                                 </a>
                                 <ul class="list--remove-padding list--remove-margin list--horizontal">
@@ -375,6 +372,9 @@
 
     <div class="scrim"></div>
 
+    <script defer src="assets/components/fontawesome/fontawesome.min.js"></script>
+    <script defer src="assets/components/fontawesome/fa-regular.min.js"></script>
+    <script defer src="assets/components/fontawesome/fa-brands.min.js"></script>
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
