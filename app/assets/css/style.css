@@ -898,6 +898,8 @@ img {
         border-color: white; }
   .f__main {
     background: #BF412C; }
+    .f__main .grid {
+      margin-top: 0; }
     .f__main--nav {
       margin: 0 -1rem; }
   .f__end {
