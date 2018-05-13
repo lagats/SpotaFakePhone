@@ -9,6 +9,8 @@
     border-radius: 3px;
     color: $col__link--initial;
     background-color: $white;
+    outline: none;
+
     &:hover,
     &:focus,
     &:active {
@@ -17,10 +19,26 @@
         color: $white;
         background-color: $col__link--active;
     }
-
+    &:focus {
+        text-decoration: underline;
+    }
     &--primary {
         color: $white;
         background-color: $col__link--initial;
+    }
+    &--icon {
+        color: $white;
+        background-color: transparent;
+        line-height: 2rem;
+        font-size: 2rem;
+        display: inline-flex;
+        align-items: center;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $col__primary--dark;
+            border-color: $col__primary--dark;
+        }
     }
 }
 

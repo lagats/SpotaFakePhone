@@ -1,0 +1,14 @@
+.twitter {
+    &__avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 999px;
+    }
+    &__name{
+        margin-bottom: 0;
+    }
+    &__handle{
+        font-size: $font-size__heading-5;
+        color: $col__grey--60;
+    }
+}

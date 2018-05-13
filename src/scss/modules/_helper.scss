@@ -3,7 +3,7 @@
 // ----------------------------
 
 // Screen reader only
-.sr-only {
+.sr-only, .invisible {
     position: absolute;
     left: -9999px;
     opacity: 0;
@@ -75,12 +75,73 @@
 // greyscale
 .greyscale {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+            filter: grayscale(100%);
 }
 
 // opacity
 .opacity {
     &--85 {
-        opacity: 0.85;
+        opacity: .85;
+    }
+}
+
+// space
+.space {
+    &--right {
+        margin-right: .5rem;
+    }
+    &--left {
+        margin-left: .5rem;
+    }
+}
+
+// only in particular breakpoints
+@media only screen and (max-width:$bp--l--reversed) {
+    .only {
+        &--desktop {
+            display: none;
+        }
+    }
+}
+@media only screen and (min-width:$bp--l) {
+    .only {
+        &--mobile {
+            display: none;
+        }
+    }
+}
+
+// state-x
+.state {
+    &--x {
+        display: none;
+        .h__menu-active & {
+            display: block;
+        }
+    }
+    &--0 {
+        .h__menu-active & {
+            display: none;
+        }
+    }
+}
+
+// freeze
+.freeze {
+    width: 100%;
+    position: fixed;
+}
+
+// scrim
+.scrim {
+    &--active & {
+        display: block;
+        position: absolute;
+        z-index: 5000;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.5);
     }
 }
