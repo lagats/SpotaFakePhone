@@ -145,3 +145,12 @@
         background: rgba(0,0,0,0.5);
     }
 }
+
+// file info
+.file--info {
+    background: $col__grey--10;
+    font-size: $font-size__s;
+    color: $col__grey--80;
+    padding: $gap--s*0.15;
+    border-radius: 3px;
+}

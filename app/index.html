@@ -34,11 +34,11 @@
                     <nav class="nav flex__align-self--right" role="navigation">
                         <ul class="list--remove-padding list--remove-margin list--horizontal">
                             <li>
-                                <button class="btn btn--icon btn__menu--toggle">
+                                <a class="btn btn--icon btn__menu--toggle" tabindex="0">
                                     <span class="sr-only btn__menu--toggle--description">Toggle main navigation</span>
                                     <i class="far fa-bars state--0" aria-hidden="true"></i>
                                     <i class="far fa-times state--x" aria-hidden="true"></i>
-                                </button>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -51,14 +51,14 @@
                     <nav class="h__pick-lang" role="navigation">
                         <ul class="list--remove-padding list--remove-margin list--horizontal">
                             <li class="has-submenu">
-                                <a href="#" aria-haspopup="true" aria-expanded="false">
+                                <a aria-haspopup="true" aria-expanded="false" tabindex="0">
                                     <i class="far fa-globe space--right" aria-hidden="true"></i><span class="sr-only">Select your language: The current language is </span>English<i class="far fa-angle-down space--left" aria-hidden="true"></i>
                                 </a>
                                 <ul class="list--remove-padding list--remove-margin list--horizontal">
-                                    <li><a href="#" lang="en">English<i class="far fa-check space--left" aria-hidden="true"></i><span class="sr-only"> is currently selected.</span></a></li>
-                                    <li><a href="#" lang="es">Español</a></li>
-                                    <li><a href="#" lang="pt">Portugués</a></li>
-                                    <li><a href="#" lang="de">Deutsch</a></li>
+                                    <li><a href="http://www.spotafakephone.com/index.cfm?lang=eng" lang="en">English<i class="far fa-check space--left" aria-hidden="true"></i><span class="sr-only"> is currently selected.</span></a></li>
+                                    <li><a href="http://www.spotafakephone.com/index.cfm?lang=es" lang="es">Español</a></li>
+                                    <li><a href="http://www.spotafakephone.com/index.cfm?lang=pd" lang="pt">Portugués</a></li>
+                                    <li><a href="http://www.spotafakephone.com/index.cfm?lang=de" lang="de">Deutsch</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -69,10 +69,10 @@
                                 <a href="/">Home</a>
                             </li>
                             <li>
-                                <a href="#">Contact us</a>
+                                <a href="http://www.spotafakephone.com/contact.cfm">Contact us</a>
                             </li>
                             <li>
-                                <a href="#">FAQ</a>
+                                <a href="http://www.spotafakephone.com/faq.cfm">FAQ</a>
                             </li>
                         </ul>
                     </nav>
@@ -88,16 +88,16 @@
                     <nav class="nav flex__align-self--right flex flex__align-items--center" role="navigation">
                         <ul class="list--remove-padding list--remove-margin list--horizontal">
                             <li>
-                                <a href="#">How to tell</a>
+                                <a href="http://www.spotafakephone.com/how-to-tell.cfm">How to tell</a>
                             </li>
                             <li>
-                                <a href="#">Buying genuine</a>
+                                <a href="http://www.spotafakephone.com/why-buy-genuine.cfm">Buying genuine</a>
                             </li>
                             <li>
-                                <a href="#">Report a fake</a>
+                                <a href="http://www.spotafakephone.com/report-a-fake.cfm">Report a fake</a>
                             </li>
                             <li>
-                                <a href="#">Publications</a>
+                                <a href="http://www.spotafakephone.com/publications.cfm">Publications</a>
                             </li>
                         </ul>
                     </nav>
@@ -113,13 +113,13 @@
                 <div class="banner__block--inner">
                     <h1 class="banner__block--title margin--remove-top">Is your mobile phone a counterfeit?</h1>
                     <p class="banner__block--summery">Counterfeit phones and accessories are a multi-billion dollar business controlled by organized crime. Don’t buy into it!</p>
-                    <a href="#" class="btn">Find out how to tell</a>
+                    <a href="http://www.spotafakephone.com/how-to-tell.cfm" class="btn">Find out how to tell</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <main id="main-content" class="main" role="main">
+    <main id="main-content" class="main" role="main" tabindex="-1">
         <div class="section__colour--white">
             <div class="section--xxl container">
                 <h2>What's so bad about fake phones?</h2>
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="text-align--center section--xs">
-                    <a href="#" class="btn btn--primary">More about fake phones</a>
+                    <a href="http://www.spotafakephone.com/why-buy-genuine.cfm" class="btn btn--primary">More about fake phones</a>
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
                                 <div class="card__block">
                                     <p>The Mobile & Wireless Forum (MWF) is an international association of companies with an interest in mobile and wireless communications including the evolution to 5G and the Internet of Things. The MWF focuses on a range of issues concerning mobile and wireless devices including RF health and safety, certification testing standards and requirements, counterfeit issues and accessibility.
                                     </p>
-                                    <a href="#" class="btn btn--primary">More about fake phones</a>
+                                    <a href="http://mmfai.info/" class="btn btn--primary">More about the MWF</a>
                                 </div>
                             </div>
                             <div class="col--1-2">
@@ -196,7 +196,7 @@
                                     <i class="icon--xl colour-text--primary fa-fw far fa-image" aria-hidden="true"></i>
                                 </div>
                                 <div class="card padding--remove-top padding--remove-right">
-                                    <h3 class="h4"><a href="#">Infographic: Is your mobile phone counterfeit?</a></h3>
+                                    <h3 class="h4"><a href="http://spotafakephone.com//docs/eng/MWF_Counterfeit_Infographic.pdf">Infographic: Is your mobile phone counterfeit? <span class="file--info">PDF 415KB</span></a></h3>
                                     <span class="font-size--s">November 2017</span>
                                 </div>
                             </div>
@@ -205,13 +205,13 @@
                                     <i class="icon--xl colour-text--primary fa-fw far fa-newspaper" aria-hidden="true"></i>
                                 </div>
                                 <div class="card padding--remove-right">
-                                    <h3 class="h4"><a href="#">New report finds counterfeit smartphones cost mobiles industry EUR 45.3 Billion</a></h3>
+                                    <h3 class="h4"><a href="http://spotafakephone.com//docs/eng/280217_MWF_PR_EUIPO%20Counterfeit%20Study.pdf">New report finds counterfeit smartphones cost mobiles industry EUR 45.3 Billion <span class="file--info">PDF 276KB</span></a></h3>
                                     <span class="font-size--s">February 2017</span>
                                 </div>
                             </div>
                         </div>
                         <div class="text-align--center">
-                            <a href="#" class="btn btn--primary">More publications</a>
+                            <a href="http://www.spotafakephone.com/publications.cfm" class="btn btn--primary">More publications</a>
                         </div>
                     </div>
                 </div>
@@ -239,7 +239,7 @@
                                         </span>
                                         <span class="sr-only">https://hivisasa.com/posts/this-is-the-easiest-way-to-identify-a-fake-phone?utm_source=twitter&amp;utm_medium=social&amp;utm_campaign=share_buttons</span>
                                     </a>
-                                     via <a href="/HiviSasa" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="516213518"><s>@</s>Hivisasa</a> <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>fake</a> <a href="/hashtag/counterfeit?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>counterfeit</a> <a href="/hashtag/phone?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>phone</a>
+                                     via <a href="/HiviSasa" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="516213518">@Hivisasa</a> <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#fake</a> <a href="/hashtag/counterfeit?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#counterfeit</a> <a href="/hashtag/phone?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#phone</a>
                                 </p>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                                         </span>
                                         <span class="sr-only">https://www.urdupoint.com/en/pakistan/risk-of-fake-smart-phones-increases-in-the-ma-326281.html</span>
                                     </a>
-                                     <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>fake</a> <a href="/hashtag/counterfeit?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>counterfeit</a> <a href="/hashtag/Pakistan?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>Pakistan</a>
+                                     <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#fake</a> <a href="/hashtag/counterfeit?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#counterfeit</a> <a href="/hashtag/Pakistan?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#Pakistan</a>
                                 </p>
                             </div>
                         </div>
@@ -278,14 +278,14 @@
                                     </div>
                                 </div>
                                 <p class="twitter__text card padding--remove-top padding--remove-right padding--remove-left">
-                                    Hong Kong: <a href="/hashtag/Customs?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>Customs</a> raid shops selling <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>fake</a> <a href="/hashtag/accessories?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>accessories</a> and used <a href="/hashtag/smartphones?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr"><s>#</s>smartphones</a> as new
+                                    Hong Kong: <a href="/hashtag/Customs?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#Customs</a> raid shops selling <a href="/hashtag/fake?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#fake</a> <a href="/hashtag/accessories?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#accessories</a> and used <a href="/hashtag/smartphones?src=hash" data-query-source="hashtag_click" class="twitter-hashtag pretty-link js-nav" dir="ltr">#smartphones</a> as new
                                      <a href="https://t.co/siVymLor9i" rel="nofollow noopener" dir="ltr" data-expanded-url="https://sc.mp/2qR3l8b" class="twitter-timeline-link"  title="https://sc.mp/2qR3l8b">
                                         <span aria-hidden="true">
                                             <span class="tco-ellipsis"></span><span class="invisible">https://</span><span class="js-display-url">sc.mp/2qR3l8b</span><span class="invisible"></span><span class="tco-ellipsis"><span class="invisible">&nbsp;</span></span>
                                         </span>
                                         <span class="sr-only">https://sc.mp/2qR3l8b</span>
                                     </a>
-                                     via <a href="/SCMP_News" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="23922797"><s>@</s>SCMP_News</a>
+                                     via <a href="/SCMP_News" class="twitter-atreply pretty-link js-nav" dir="ltr" data-mentioned-user-id="23922797">@SCMP_News</a>
                                 </p>
                             </div>
                         </div>
@@ -305,22 +305,22 @@
                                 <nav role="navigation">
                                     <ul class="f__main--nav list--remove-padding list--remove-margin list--remove-type">
                                         <li>
-                                            <a href="#" class="reversed">How to tell if your phone is fake</a>
+                                            <a href="http://www.spotafakephone.com/how-to-tell.cfm" class="reversed">How to tell if your phone is fake</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="reversed">Why buy genuine</a>
+                                            <a href="http://www.spotafakephone.com/why-buy-genuine.cfm" class="reversed">Why buy genuine</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="reversed">Publications</a>
+                                            <a href="http://www.spotafakephone.com/publications.cfm" class="reversed">Publications</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="reversed">Report a fake</a>
+                                            <a href="http://www.spotafakephone.com/report-a-fake.cfm" class="reversed">Report a fake</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="reversed">FAQ</a>
+                                            <a href="http://www.spotafakephone.com/faq.cfm" class="reversed">FAQ</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="reversed">Contact us</a>
+                                            <a href="http://www.spotafakephone.com/contact.cfm" class="reversed">Contact us</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -362,10 +362,10 @@
                             </span>
                         </li>
                         <li>
-                            <a href="#" class="reversed">Terms of Service</a>
+                            <a href="http://www.spotafakephone.com/terms.cfm" class="reversed">Terms of Service</a>
                         </li>
                         <li>
-                            <a href="#" class="reversed">Privacy Policy</a>
+                            <a href="http://www.spotafakephone.com/privacy.cfm" class="reversed">Privacy Policy</a>
                         </li>
                     </ul>
                 </nav>
