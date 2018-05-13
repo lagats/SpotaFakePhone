@@ -414,6 +414,9 @@ html {
   overflow-x: hidden;
   min-height: 100vh; }
 
+main {
+  outline: none; }
+
 a {
   outline: none;
   font-weight: bold;
