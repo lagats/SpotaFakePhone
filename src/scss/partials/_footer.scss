@@ -3,15 +3,33 @@
     font-size: $font-size__heading-5;
     position: relative;
     z-index: 1000;
+
+    &__title {
+        color: $white !important;
+    }
     a, .copyright  {
         color: $white;
         padding: 0 $gap--xs;
         font-weight: normal;
         display: inline-block;
     }
+    &__share {
+        margin: 0 -$gap--xs*0.5;
+        .btn--icon {
+            padding: 0;
+            margin: 0 $gap--xs*0.5;
+            font-size: $font-size__xxl;
+            border-radius: 4px;
+            svg {
+                margin: 0 #{-$gap--xs*0.4};
+            }
+            &:hover, &:focus {
+                border-color: white;
+            }
+        }
+    }
     &__main {
         background: $col__header__pre--bg;
-        padding: #{$gap--xs} 0;
 
         &--nav {
             margin: 0 -#{$gap--xs};

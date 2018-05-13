@@ -868,14 +868,26 @@ img {
   font-size: 1.3rem;
   position: relative;
   z-index: 1000; }
+  .f__title {
+    color: #fff !important; }
   .f a, .f .copyright {
     color: #fff;
     padding: 0 1rem;
     font-weight: normal;
     display: inline-block; }
+  .f__share {
+    margin: -0.5rem; }
+    .f__share .btn--icon {
+      padding: 0;
+      margin: 0 0.5rem;
+      font-size: 3rem;
+      border-radius: 4px; }
+      .f__share .btn--icon svg {
+        margin: 0 -0.4rem; }
+      .f__share .btn--icon:hover, .f__share .btn--icon:focus {
+        border-color: white; }
   .f__main {
-    background: #BF412C;
-    padding: 1rem 0; }
+    background: #BF412C; }
     .f__main--nav {
       margin: 0 -1rem; }
   .f__end {
