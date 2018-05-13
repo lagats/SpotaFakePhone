@@ -9,6 +9,9 @@
     &--remove-margin {
         margin: 0;
     }
+    &--remove-type {
+        list-style: none;
+    }
     &--horizontal {
          > li {
             display: inline-block;

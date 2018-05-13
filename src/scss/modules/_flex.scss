@@ -25,4 +25,13 @@
             align-self: flex-end;
         }
     }
+    &__grow {
+        flex-grow: 1;
+        &--none {
+            flex-grow: 0;
+        }
+    }
+    &__shrink {
+        flex-shrink: 1;
+    }
 }

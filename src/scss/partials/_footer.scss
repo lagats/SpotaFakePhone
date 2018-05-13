@@ -1,3 +1,46 @@
-.footer {
+.f {
+    color: $white;
+    font-size: $font-size__heading-5;
+    position: relative;
+    z-index: 1000;
+    a, .copyright  {
+        color: $white;
+        padding: 0 $gap--xs;
+        font-weight: normal;
+        display: inline-block;
+    }
+    &__main {
+        background: $col__header__pre--bg;
+        padding: #{$gap--xs} 0;
 
+        &--nav {
+            margin: 0 -#{$gap--xs};
+        }
+    }
+    &__end {
+        background: $col__grey--70;
+        padding: #{$gap--xs} 0;
+
+        &--nav {
+            margin: 0 -#{$gap--xs};
+        }
+    }
+}
+
+@media only screen and (min-width: $bp--l) {
+    .f {
+        &__main {
+            nav {
+                width: 100%;
+            }
+            &--nav {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 50%;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
 }

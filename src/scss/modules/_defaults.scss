@@ -12,7 +12,10 @@ html {
     font-size: $font-size__base;
 }
 body {
-    font: #{$font-weight__body} #{$font-size__body}/#{$line-height__body} #{$font-family__body};
+    font-family: $font-family__body;
+    font-size: $font-size__body;
+    font-weight: $font-weight__body;
+    line-height: $line-height__body;
     transition: all .4s .3s ease-in;
     color: $col__font--body;
     background-color: $col__body--bg;
@@ -26,12 +29,12 @@ html {
 
 // Links
 a {
+    outline: none;
     font-weight: bold;
     text-decoration: $link--initial;
     -webkit-transition: all .1s ease;
             transition: all .1s ease;
     color: $col__link--initial;
-    outline: none;
 
     &.reversed {
         text-decoration: $link--reversed;

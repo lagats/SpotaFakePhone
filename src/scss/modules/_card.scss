@@ -4,6 +4,9 @@
 
 .card {
     padding: $gap--s;
+    display: block;
+    width: 100%;
+    flex-shrink: 1;
 
     &__inner {
         height: 100%;
@@ -11,6 +14,9 @@
     }
     &__block {
         padding-bottom: $gap--s;
+    }
+    &__auto {
+        width: auto;
     }
 
     // colour
